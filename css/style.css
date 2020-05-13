@@ -48,7 +48,7 @@ input[type="text"]:focus {
 .usersecright{
   text-align: left;
   flex-basis: 55%;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 .friendlist{
