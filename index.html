@@ -7,6 +7,13 @@
         <!-- css -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
         <link rel="stylesheet" href="./css/style.css">
+        <!-- Magnific Popup core CSS file -->
+        <link rel="stylesheet" href="./css/magnific-popup.css"> 
+
+        <!-- js -->
+        <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous"></script>        
+        <script src="./js/jquery.magnific-popup.min.js"></script>
         
         <title>Dchat</title>
     </head>
@@ -96,7 +103,16 @@
                     </div>
                     <div class="chattopright">
                         <a href="#" class="accountcolor">register</a> 
-                        <a href="#" class="accountcolor">login</a>
+                        <a href="#loginpopup" class="accountcolor loginpopup">login</a>
+                    </div>
+                    <!-- popup -->
+                    <div id="loginpopup" class="white-popup mfp-hide">
+                        <form class="loginform">
+                            <h2>Login</h2>
+                            <input type="text" class="logininput" placeholder="Username"/>
+                            <input type="password" class="logininput" placeholder="Password"/>
+                            <button class="loginbtn">Submit</button>
+                        </form>                   
                     </div>
                 </section>
                 <section class="chatsec">
@@ -119,5 +135,11 @@
                 </section>
             </div>
         </div>
+
+        <script>
+            $('.loginpopup').magnificPopup({
+                type: 'inline'
+            });
+        </script>
     </body>
 </html>
