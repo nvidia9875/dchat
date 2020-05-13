@@ -179,4 +179,15 @@ input[type="text"]:focus {
 .accountcolor{
   color: #eee;
   text-decoration: none;
+  margin: 1rem;
+}
+.chattopleft{
+  flex-basis: 70%;
+  display:flex;
+  align-items: center;
+}
+.chattopright{
+  flex-basis: 30%;
+  text-align: right;
+  margin-right: 2rem;
 }
