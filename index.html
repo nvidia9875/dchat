@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="./css/style.css">
+        
+        <title>Dchat</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left">
+                
+                <!-- logo -->
+                <section class="logosec">
+                    <h1>
+                        <img src="./images/logo.png" alt="logo" id="sitelogo">
+                    </h1>
+                </section>
+                
+                <!-- user information -->
+                <section class="usersec">
+                    <!-- userimage -->
+                    <p class="usersecleft">
+                        <img src="./images/neko.png" alt="userimage" class="userimage">
+                    </p>
+                    <!-- username -->
+                    <p class="usersecright">
+                        s.shunsuke
+                    </p>
+                </section>
+
+                <!-- search box -->
+                <section class="searchsec">
+                    <input type="text" id="searchbox" placeholder="&#128269;">
+                </section>
+
+                <!-- friend list! One section, one friend.-->
+                <section class="friendlist">
+                    <p class="friendleft">
+                        <img src="./images/pikachu.png" alt="userimage" class="userimage">
+                    </p>
+                    <!-- username -->
+                    <div class="friendright">
+                        <p class="bold">
+                            tamago
+                        </p>
+                        <p class="lastmessage">
+                            たまごかってきて
+                        </p>    
+                    </div>
+                </section>
+
+                <section class="friendlist">
+                    <p class="friendleft">
+                        <img src="./images/pikachu.png" alt="userimage" class="userimage">
+                    </p>
+                    <!-- username -->
+                    <div class="friendright">
+                        <p class="bold">
+                            touhu
+                        </p>
+                        <p class="lastmessage">
+                            とうふかってきて
+                        </p>    
+                    </div>
+                </section>
+
+                <section class="friendlist">
+                    <p class="friendleft">
+                        <img src="./images/pikachu.png" alt="userimage" class="userimage">
+                    </p>
+                    <!-- username -->
+                    <div class="friendright">
+                        <p class="bold">
+                            shake
+                        </p>
+                        <p class="lastmessage">
+                        しゃけかってきて
+                        </p>    
+                    </div>
+                </section>
+            </div>
+            <div class="chat">
+                <section class="chattopsec">
+                    <p>
+                        <img src="./images/pikachu.png" alt="" class="targetimage">
+                    </p>
+                    <p class="targetname">
+                        tamago
+                    </p>
+                </section>
+                <section class="chatsec">
+                    <div class="targetcomment">
+                        <p>
+                            左ふきだし文
+                        </p>
+                    </div>
+                    <div class="mycomment">
+                        <p>
+                            右ふきだし文
+                        </p>
+                    </div>                        
+                </section>
+                <section class="inputsec">
+                     <input type="text" id="inputbox" placeholder="Enter your message.">
+                     <p>
+                         <img src="./images/sent.png" alt="送信" id="senticon">
+                     </p>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
