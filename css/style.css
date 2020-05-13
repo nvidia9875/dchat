@@ -174,3 +174,87 @@ input[type="text"]:focus {
   max-width: 100%;
   height: auto;
 }
+
+/* login logout register */
+.accountcolor{
+  color: #eee;
+  text-decoration: none;
+  margin: 1rem;
+}
+.chattopleft{
+  flex-basis: 70%;
+  display:flex;
+  align-items: center;
+}
+.chattopright{
+  flex-basis: 30%;
+  text-align: right;
+  margin-right: 2rem;
+}
+
+/* login popup */
+.white-popup {
+  position: relative;
+  width: auto;
+  max-width: 300px;
+  margin: 20px auto;
+}
+.loginform {
+  margin: 70px auto;
+  background: #303030;
+  text-align: center;
+  padding: 40px;
+  border-radius: 6px;
+}
+.loginform > h2 {
+  color: #f4f4f4;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.7);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.logininput {
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+  display: block;
+  width: 85%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  transition: all 0.1s ease-in-out;
+  outline: none;
+}
+.logininput:focus {
+  background: rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease-in-out;
+}
+::-webkit-input-placeholder {
+  color: rgba(225, 225, 225, 0.4);
+}
+:-moz-placeholder {
+  color: rgba(225, 225, 225, 0.4);
+}
+::-moz-placeholder {
+  color: rgba(225, 225, 225, 0.4);
+}
+:-ms-input-placeholder {
+  color: rgba(225, 225, 225, 0.4);
+}
+.loginbtn {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding: 15px;
+  width: 75%;
+  border-radius: 6px;
+  transition: all 0.1s ease-in-out;
+  font-size: 1.2em;
+  background: #f26964;
+  color: #f4f4f4;
+  box-shadow: 0px 3px 0px #ab4b47;
+  cursor: pointer;
+}
+.loginbtn:active {
+  top: 3px;
+  box-shadow: none;
+}
