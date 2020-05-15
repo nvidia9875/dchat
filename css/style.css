@@ -199,20 +199,20 @@ input[type="text"]:focus {
   max-width: 300px;
   margin: 20px auto;
 }
-.loginform {
+.popupform {
   margin: 70px auto;
   background: #303030;
   text-align: center;
   padding: 40px;
   border-radius: 6px;
 }
-.loginform > h2 {
+.popupform > h2 {
   color: #f4f4f4;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.7);
   font-weight: 400;
   margin-bottom: 20px;
 }
-.logininput {
+.popupinput {
   background: rgba(0, 0, 0, 0.2);
   color: #fff;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
@@ -223,21 +223,13 @@ input[type="text"]:focus {
   border-radius: 6px;
   transition: all 0.1s ease-in-out;
   outline: none;
+  border: 0;
 }
-.logininput:focus {
+.popupinput:focus {
   background: rgba(0, 0, 0, 0.1);
   transition: all 0.1s ease-in-out;
 }
 ::-webkit-input-placeholder {
-  color: rgba(225, 225, 225, 0.4);
-}
-:-moz-placeholder {
-  color: rgba(225, 225, 225, 0.4);
-}
-::-moz-placeholder {
-  color: rgba(225, 225, 225, 0.4);
-}
-:-ms-input-placeholder {
   color: rgba(225, 225, 225, 0.4);
 }
 .loginbtn {
@@ -253,6 +245,7 @@ input[type="text"]:focus {
   color: #f4f4f4;
   box-shadow: 0px 3px 0px #ab4b47;
   cursor: pointer;
+  border: 0;
 }
 .loginbtn:active {
   top: 3px;
