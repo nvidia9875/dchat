@@ -9,11 +9,6 @@
         <link rel="stylesheet" href="./css/style.css">
         <!-- Magnific Popup core CSS file -->
         <link rel="stylesheet" href="./css/magnific-popup.css"> 
-
-        <!-- js -->
-        <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
-        <script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous"></script>        
-        <script src="./js/jquery.magnific-popup.min.js"></script>
         
         <title>Dchat</title>
     </head>
@@ -86,7 +81,7 @@
                             shake
                         </p>
                         <p class="lastmessage">
-                        しゃけかってきて
+                            しゃけかってきて
                         </p>    
                     </div>
                 </section>
@@ -102,28 +97,39 @@
                         </p>
                     </div>
                     <div class="chattopright">
-                        <a href="#" class="accountcolor">register</a> 
+                        <a href="#registerpopup" class="accountcolor registerpopup">register</a> 
                         <a href="#loginpopup" class="accountcolor loginpopup">login</a>
                     </div>
                     <!-- popup -->
                     <div id="loginpopup" class="white-popup mfp-hide">
-                        <form class="loginform">
+                        <form class="popupform">
                             <h2>Login</h2>
-                            <input type="text" class="logininput" placeholder="Username"/>
-                            <input type="password" class="logininput" placeholder="Password"/>
+                            <input type="text" class="popupinput" placeholder="Username"/>
+                            <input type="password" class="popupinput" placeholder="Password"/>
                             <button class="loginbtn">Submit</button>
                         </form>                   
+                    </div>
+                    <!-- register popup -->
+                    <div id="registerpopup" class="white-popup mfp-hide">
+                        <form class="popupform">
+                            <h2>register</h2>
+                            <input type="text" class="popupinput" placeholder="Username" required/>
+                            <input type="email" class="popupinput" placeholder="Email" required/>
+                            <input type="password" class="popupinput" placeholder="Password入力" required/>
+                            <input type="password" class="popupinput" placeholder="再度Password入力" required/>
+                            <button class="loginbtn">Submit</button>
+                        </form>
                     </div>
                 </section>
                 <section class="chatsec">
                     <div class="targetcomment">
                         <p>
-                            左ふきだし文
+                            何か買ってくるものある？
                         </p>
                     </div>
                     <div class="mycomment">
                         <p>
-                            右ふきだし文
+                            たまごかってきて
                         </p>
                     </div>                        
                 </section>
@@ -136,8 +142,16 @@
             </div>
         </div>
 
+        <!-- js -->
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous"></script>        
+        <script src="./js/jquery.magnific-popup.min.js"></script>
+        
+        <!-- jquery -->
         <script>
             $('.loginpopup').magnificPopup({
+                type: 'inline'
+            });
+            $('.registerpopup').magnificPopup({
                 type: 'inline'
             });
         </script>
